@@ -1,0 +1,19 @@
+.searchContainer {
+  width: 100%;
+  position: relative; /* Make the parent a reference point for absolute positioning */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.noResults {
+  position: absolute;
+  top: calc(100% + 0.5rem); /* Position it just below the search input */
+  width: 100%;
+  text-align: center;
+}
+
+.noResults h2 {
+  font-size: 1.4rem;
+  color: var(--color-text-secondary);
+}

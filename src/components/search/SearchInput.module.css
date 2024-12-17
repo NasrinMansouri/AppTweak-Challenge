@@ -1,0 +1,50 @@
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 1rem 2.5rem 1rem 4.5rem;
+  font-size: 1.4rem;
+  color: var(--color-text-primary);
+  border: 0.1rem solid var(--color-brand);
+  border-radius: 2rem;
+  background-color: var(--color-bg-primary);
+  box-sizing: border-box;
+  height: 4rem;
+}
+
+.searchInput:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px var(--color-brand);
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%); /* Center vertically */
+  width: 2rem;
+  height: 2rem;
+  pointer-events: none;
+}
+
+.clearButton {
+  position: absolute;
+  top: 50%;
+  right: 1.4rem;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.closeIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}

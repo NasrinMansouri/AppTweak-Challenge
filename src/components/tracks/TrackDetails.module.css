@@ -1,0 +1,85 @@
+.tracksSection {
+  margin-top: 1rem;
+}
+
+.trackList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.trackItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  border: 1px solid var(--color-border);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+}
+
+.albumCoverContainer {
+  flex-shrink: 0;
+}
+
+.albumCover {
+  width: 12rem;
+  height: 12rem;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.trackDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.trackNameContainer {
+  margin-bottom: 2rem;
+}
+.trackName {
+  margin: 0;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--color-text-primary);
+}
+.trackInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.albumName,
+.releaseDate {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--color-text-secondary);
+}
+.artists {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .albumCover {
+    width: 16rem;
+    height: 12rem;
+  }
+  .trackDetails {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+  }
+  .trackInfo {
+    flex-direction: row;
+    gap: 8rem;
+  }
+  .trackNameContainer {
+    margin-bottom: 0;
+  }
+}

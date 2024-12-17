@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+  gap: 1.6rem;
+  margin: 0 1.6rem 4rem 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    margin: 0 2.6rem 4rem 2.6rem;
+    gap: 2.6rem;
+  }
+}
